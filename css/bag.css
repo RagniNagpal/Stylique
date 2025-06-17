@@ -1,0 +1,36 @@
+body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .cart-item img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .cart-details {
+      flex: 1;
+    }
+
+    .cart-details h3 {
+      margin: 0;
+    }
+
+    .cart-details p {
+      margin: 5px 0;
+    }
+
+    .total {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+    }

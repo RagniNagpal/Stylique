@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Myntra Clone</title>
+    <title>Stylique</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- Font Awesome CDN -->
@@ -13,7 +13,7 @@
     <header id="head">
         <div class="main">
             <div class="logo">
-                <img src="D:\Placements\Myntra\images\logo.jpg" alt="Myntra Logo">
+                <img src="images/logo.png" alt="Myntra Logo">
             </div>
 
             <ul class="nav">
@@ -35,9 +35,12 @@
             <li>
                 <a href="#"><i class="fa fa-heart"></i> Wishlist</a>
             </li>
+           
             <li>
-                <a href="#"><i class="fa fa-shopping-bag"></i> Bag</a>
-            </li>
+ <a href="bag.html"><i class="fa fa-shopping-bag"></i> Bag <span id="cart-count" style="color: crimson; font-weight: bold;">0</span></a>
+
+
+
             </ul>
         </div>
     </header>
@@ -60,21 +63,85 @@
             <img src="images/9.png" alt="9">
             <img src="images/10.png" alt="10">
             <img src="images/11.png" alt="11">
-            <img src="images/12.png" alt="2">
+            <img src="images/12.png" alt="12">
         </div>
     </div>
 
     <div class="category">
         <h1>SHOP BY CATEGORY</h1>
         <div class="photo">
-            <img src="images/1.jpg" alt="a">
-            <img src="images/2.jpg" alt="b">
-            <img src="images/3.jpg" alt="c">
-            <img src="images/4.jpg" alt="d">
-            <img src="images/5.jpg" alt="e">
-            <img src="images/6.jpg" alt="f">
-            <img src="D:\Placements\Myntra\images\7.jpg" alt="g">
-            <img src="images/8.jpg" alt="h">
+            <div class="card">
+    <img src="images/1.jpg" alt="Product 1">
+    <div class="card-details">
+        <div class="product-name">Carlton London</div>
+        <div class="product-price">Rs 599 <span class="original-price">Rs 999</span> <span class="discount">(40% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/2.jpg" alt="Product 2">
+    <div class="card-details">
+        <div class="product-name">Dress</div>
+        <div class="product-price">Rs 1499 <span class="original-price">Rs 2999</span> <span class="discount">(50% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/3.jpg" alt="Product 3">
+    <div class="card-details">
+        <div class="product-name">Women Floral Skirt</div>
+        <div class="product-price">Rs 899 <span class="original-price">Rs 1799</span> <span class="discount">(50% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/4.jpg" alt="Product 4">
+    <div class="card-details">
+        <div class="product-name">Cricket Jersey</div>
+        <div class="product-price">Rs 999 <span class="original-price">Rs 1999</span> <span class="discount">(50% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/5.jpg" alt="Product 5">
+    <div class="card-details">
+        <div class="product-name">T-Shirt</div>
+        <div class="product-price">Rs 699 <span class="original-price">Rs 1299</span> <span class="discount">(46% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/6.jpg" alt="Product 6">
+    <div class="card-details">
+        <div class="product-name">Nike Shoes</div>
+        <div class="product-price">Rs 1199 <span class="original-price">Rs 2499</span> <span class="discount">(52% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/7.jpg" alt="Product 7">
+    <div class="card-details">
+        <div class="product-name">Formal Dress</div>
+        <div class="product-price">Rs 899 <span class="original-price">Rs 1699</span> <span class="discount">(47% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="card">
+    <img src="images/8.jpg" alt="Product 8">
+    <div class="card-details">
+        <div class="product-name">Smart Watch</div>
+        <div class="product-price">Rs 999 <span class="original-price">Rs 1999</span> <span class="discount">(50% OFF)</span></div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
         </div>
     </div>
 
@@ -122,5 +189,6 @@
             © 2023 www.myntra.com. All rights reserved.
         </div>
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
