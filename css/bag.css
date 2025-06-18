@@ -3,34 +3,120 @@ body {
       padding: 20px;
     }
 
-    .cart-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-    }
+    /* Navbar Styling */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-    .cart-item img {
-      width: 120px;
-      height: auto;
-      margin-right: 20px;
-    }
+#navbar img {
+  height: 40px;
+}
 
-    .cart-details {
-      flex: 1;
-    }
+#navbar h4 {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 18px;
+}
 
-    .cart-details h3 {
-      margin: 0;
-    }
+#navbar h4 a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
 
-    .cart-details p {
-      margin: 5px 0;
-    }
+#navbar h4 a:hover {
+  color: #007bff;
+}
 
-    .total {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 30px;
-    }
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navbar h4 {
+    font-size: 16px;
+  }
+
+  #navbar img {
+    height: 30px;
+  }
+}
+
+/* 🛒 Shopping Cart Item Layout */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.cart-item img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+.cart-details {
+  flex: 1;
+  min-width: 200px;
+}
+
+.cart-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #222;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .cart-details {
+    width: 100%;
+  }
+
+  .cart-details h3 {
+    font-size: 16px;
+  }
+
+  .cart-details p {
+    font-size: 13px;
+  }
+
+  .total {
+    font-size: 18px;
+    text-align: center;
+  }
+}
